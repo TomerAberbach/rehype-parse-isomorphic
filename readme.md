@@ -9,12 +9,6 @@
   <a href="https://github.com/TomerAberbach/rehype-parse-isomorphic/actions">
     <img src="https://github.com/TomerAberbach/rehype-parse-isomorphic/workflows/CI/badge.svg" alt="CI" />
   </a>
-  <a href="https://unpkg.com/rehype-parse-isomorphic/dist/index.min.js">
-    <img src="https://deno.bundlejs.com/?q=rehype-parse-isomorphic&badge" alt="gzip size" />
-  </a>
-  <a href="https://unpkg.com/rehype-parse-isomorphic/dist/index.min.js">
-    <img src="https://deno.bundlejs.com/?q=rehype-parse-isomorphic&config={%22compression%22:{%22type%22:%22brotli%22}}&badge" alt="brotli size" />
-  </a>
 </div>
 
 <div align="center">
