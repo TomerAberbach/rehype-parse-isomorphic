@@ -1,0 +1,63 @@
+{
+  "name": "rehype-parse-isomorphic",
+  "version": "0.0.0",
+  "author": {
+    "name": "Tomer Aberbach",
+    "email": "tomeraberbach@gmail.com",
+    "url": "https://tomeraberba.ch"
+  },
+  "description": "A module that exports rehype-parse for Node.js and rehype-dom-parse for the browser.",
+  "keywords": [
+    "ast",
+    "browser",
+    "html",
+    "isomorphic",
+    "plugin",
+    "rehype",
+    "rehype-dom-parse",
+    "rehype-parse",
+    "rehype-plugin"
+  ],
+  "homepage": "https://github.com/TomerAberbach/rehype-parse-isomorphic",
+  "repository": "TomerAberbach/rehype-parse-isomorphic",
+  "bugs": {
+    "url": "https://github.com/TomerAberbach/rehype-parse-isomorphic/issues"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">= 18"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all"
+  ],
+  "exports": {
+    "types": "./src/index.d.ts",
+    "node": "./src/node.js",
+    "browser": "./src/browser.js"
+  },
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "prepare": "tomer install",
+    "format": "tomer format",
+    "lint": "tomer lint",
+    "typecheck": "tomer typecheck"
+  },
+  "prettier": "tomer/prettier",
+  "dependencies": {
+    "rehype-dom-parse": "^5.0.0",
+    "rehype-parse": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "tomer": "^3.1.4",
+    "typescript": "^5.4.5"
+  }
+}
