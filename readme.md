@@ -28,9 +28,10 @@ Use just like
 and
 [`rehype-dom-parse`](https://github.com/rehypejs/rehype-dom/tree/main/packages/rehype-dom-parse).
 
-> WARNING: The two libraries do not have exactly the same options. Make sure you
-> account for the differences when the library is used in Node.js vs the
-> browser.
+> [!WARNING]
+>
+> The two libraries do not have exactly the same options. Make sure you account
+> for the differences when the library is used in Node.js vs the browser.
 
 ## Why?
 
