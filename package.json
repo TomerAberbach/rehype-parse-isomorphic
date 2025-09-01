@@ -23,41 +23,44 @@
   "bugs": {
     "url": "https://github.com/TomerAberbach/rehype-parse-isomorphic/issues"
   },
-  "license": "Apache-2.0",
+  "funding": {
+    "url": "https://github.com/sponsors/TomerAberbach"
+  },
+  "license": "Apache-2.0 AND MIT",
   "files": [
-    "src"
+    "src",
+    "license-apache",
+    "license-mit",
+    "notice-apache"
   ],
   "type": "module",
   "sideEffects": false,
   "engines": {
-    "node": ">= 18"
+    "node": ">= 22"
   },
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "not op_mini all"
-  ],
   "exports": {
-    "types": "./src/index.d.ts",
-    "node": "./src/node.js",
-    "browser": "./src/browser.js"
+    ".": {
+      "types": "./src/index.d.ts",
+      "node": "./src/node.js",
+      "browser": "./src/browser.js"
+    },
+    "./package.json": "./package.json"
   },
-  "types": "./src/index.d.ts",
   "scripts": {
-    "prepare": "tomer install",
-    "format": "tomer format",
-    "lint": "tomer lint",
-    "typecheck": "tomer typecheck"
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache --cache-location node_modules/.cache/eslint/ --fix .",
+    "typecheck": "tsc --noEmit"
   },
-  "prettier": "tomer/prettier",
+  "prettier": "@tomer/prettier-config",
   "dependencies": {
-    "rehype-dom-parse": "^5.0.0",
-    "rehype-parse": "^9.0.0"
+    "rehype-dom-parse": "^5.0.2",
+    "rehype-parse": "^9.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "tomer": "^3.1.4",
-    "typescript": "^5.4.5"
+    "@tomer/eslint-config": "^4.1.1",
+    "@tomer/prettier-config": "^4.0.0",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   }
 }
